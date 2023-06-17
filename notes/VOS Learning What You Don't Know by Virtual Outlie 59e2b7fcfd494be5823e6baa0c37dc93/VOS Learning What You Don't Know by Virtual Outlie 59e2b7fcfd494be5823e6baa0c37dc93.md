@@ -2,7 +2,7 @@
 layout: post
 title: "VOS: Learning What You Don't Know by Virtual Outlier Synthesis"
 date_read: 2023/02/27
-date_pub: 2021
+date_pub: 2022
 tags: [ood, object_detection  ]
 source_url: https://arxiv.org/abs/2202.01197
 ---
