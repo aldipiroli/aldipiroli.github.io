@@ -4,7 +4,7 @@ title:
 permalink: /notes
 ---
 <h2 style="text-align:left">Notes On Papers</h2>
-<p style="text-align:justify"> Here I share some notes that I have taken  while reading some interesting papers.
+<p style="text-align:justify"> Here I share notes I made while reading some interesting papers.
 These notes represent my understanding of the papers, and they may not always be correct. 
 If you notice any issue with copyrighted content, please kindly inform me via email, and I will promptly address the issue.
 <br>
