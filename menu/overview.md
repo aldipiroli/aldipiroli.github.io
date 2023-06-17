@@ -20,7 +20,7 @@ If you notice any issue with copyrighted content, please kindly inform me via em
      <h3>Source </h3>
     </td>
     <td style="padding:1%;width:5%;vertical-align:middle;min-width:120px;text-align:center">
-     <h3>Published </h3>
+     <h3>Date</h3>
     </td>
   </tr>
   {% assign publications = site.pages | where_exp: "item" , "item.path contains 'notes'"| sort: 'date_read'|reverse %}
