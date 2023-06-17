@@ -27,6 +27,12 @@
   @include social-media-icon($twitter-color, $icon-transition-time);
 }
 
+.fa-user {
+  padding: 5px;
+  @include social-media-icon($twitter-color, $icon-transition-time);
+}
+
+
 .fa-instagram {
   padding: 5px;
   @include social-media-icon($instagram-color, $icon-transition-time);

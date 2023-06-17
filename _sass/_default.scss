@@ -1,11 +1,12 @@
 /*
   Site container
 */
+// NOTE: website width
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 615px;
+  width: 800px;
 }
 
 .content-container {
@@ -28,7 +29,9 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 4rem;
-  font-family: $sans-serif-font-family;
+  // font-family: $sans-serif-font-family;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+
 }
 
 .header a:hover {
@@ -43,6 +46,8 @@
 
 .header-subtitle {
   color: $light-gray-color;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+
 }
 
 /*
@@ -62,6 +67,8 @@
   color: $light-gray-color;
   font-size: 1rem;
   padding-right: 10px;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+
 }
 
 .social-icons {
@@ -95,7 +102,7 @@
 
 .footer a {
   color: $light-gray-color;
-  padding: 10px;
+  padding: 0px;
   text-decoration: none;
 }
 
@@ -109,5 +116,5 @@
   margin-bottom: 1rem;
   color: $light-gray-color;
   font-family: $sans-serif-font-family;
-  font-size:0.8rem;
+  // font-size:0.8rem;
 }
