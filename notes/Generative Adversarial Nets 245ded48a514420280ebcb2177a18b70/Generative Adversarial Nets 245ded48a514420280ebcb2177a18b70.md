@@ -17,5 +17,5 @@ source_url: https://www.notion.so/Literature-Reading-f2f13c0d006e4551bd99f5949a7
 <img src="Gan_Theoretical_Description_page-0007.jpg" title="" alt="" width="635">
 <img src="Gan_Theoretical_Description_page-0008.jpg" title="" alt="" width="635">
 <img src="Gan_Theoretical_Description_page-0009.jpg" title="" alt="" width="635">
-<img src="Gan_Theoretical_Description_page-00010.jpg" title="" alt="" width="635">
-<img src="Gan_Theoretical_Description_page-00011.jpg" title="" alt="" width="635">
+<img src="Gan_Theoretical_Description_page-0010.jpg" title="" alt="" width="635">
+<img src="Gan_Theoretical_Description_page-0011.jpg" title="" alt="" width="635">
