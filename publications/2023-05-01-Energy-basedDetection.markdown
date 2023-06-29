@@ -7,6 +7,8 @@ categories: research
 authors: "<strong>Aldi Piroli</strong>, Vinzenz Dallabetta, Johannes Kopp, Marc Walessa, Daniel Meissner, Klaus Dietmayer"
 venue: "IEEE Robotics and Automation Letters (RA-L)"
 arxiv: https://arxiv.org/abs/2305.16129
+project_page: projects/energy-based-adverse-weather-detection-lidar/index.html
+video: https://www.youtube.com/watch?v=pCS3zABdaAU
 # oral: False
 # slides: /pdfs/jcdl2019.pdf
 ---
