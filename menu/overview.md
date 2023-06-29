@@ -10,16 +10,16 @@ If you notice any issue with copyrighted content, please kindly inform me via em
 <br>
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tr>
-    <td style="padding-left:1%;width:75%;vertical-align:middle;min-width:120px;text-align:left; border-bottom: 3px solid black;  border-top: 3px solid black;">
+    <td style="padding-left:1%;width:75%;vertical-align:middle;min-width:120px;text-align:left; border-bottom: 2px solid black;  border-top: 2px solid black;">
      <h3>Title </h3>
     </td>
-    <td style="padding:0%;width:20%;vertical-align:middle;min-width:120px;text-align:left; border-bottom: 3px solid black;  border-top: 3px solid black;">
+    <td style="padding:0%;width:20%;vertical-align:middle;min-width:120px;text-align:left; border-bottom: 2px solid black;  border-top: 2px solid black;">
      <h3>Tags </h3>
     </td>
-    <td style="padding:0%;width:5%;vertical-align:middle;min-width:120px;text-align:center; border-bottom: 3px solid black;  border-top: 3px solid black;">
+    <td style="padding:0%;width:5%;vertical-align:middle;min-width:120px;text-align:center; border-bottom: 2px solid black;  border-top: 2px solid black;">
      <h3>Source </h3>
     </td>
-    <td style="padding:1%;width:5%;vertical-align:middle;min-width:120px;text-align:center; border-bottom: 3px solid black;  border-top: 3px solid black;">
+    <td style="padding:1%;width:5%;vertical-align:middle;min-width:120px;text-align:center; border-bottom: 2px solid black;  border-top: 2px solid black;">
      <h3>Publishing Date</h3>
     </td>
   </tr>
