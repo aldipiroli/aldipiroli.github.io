@@ -52,7 +52,7 @@ layout: default
       Robotics and Automation Engineering.
     <p>In my spare time I enjoy travelling, running and reading a good book.</p>
     <p style="text-align:center">
-      <a target="_blank" href="mailto: aldipiroli@gmail.com"> Email</a> &nbsp;/&nbsp;
+      <a target="_blank" href="mailto: aldi.piroli@uni-ulm.de"> Email</a> &nbsp;/&nbsp;
       <a href="https://github.com/aldipiroli">GitHub</a> 
       <!-- <a href="https://scholar.google.com/citations?user=EO1B95AAAAAJ">Google Scholar</a> -->
     </p>
@@ -78,8 +78,10 @@ layout: default
       <h3>{{post.title}}</h3>
       <br>
       {{post.authors}}
+      {% if post.venue %}      
       <br>
       <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+      {% endif %}
       {% if post.oral %}
       <b style="color:red">&nbsp (Oral Presentation)</b>
       {% endif %}
