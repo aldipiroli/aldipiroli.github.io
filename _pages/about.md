@@ -24,15 +24,9 @@ I did my undergraduate studies at the <a href="https://www.diism.unisi.it/it">Un
 
 In my spare time I enjoy travelling, running and reading a good book.
 
-<!-- 
-# 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  
-- -->
 
 # 📝 Publications 
-
-
+<a id="publications"></a>
 <!--  -->
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/sunet_2023.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -158,17 +152,39 @@ IEEE International Conference on Multisensor Fusion and Integration for Intellig
 </div>
 
 
-# 🎖 Honors and Awards
+
+# ⚙️ Patents
+<a id="patents"></a>
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/patent_gas_detection.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Verfahren und Erkennungseinrichtung zum lidarbasierten Erkennen von Abgaswolken und Kraftfahrzeug**](https://patents.google.com/patent/DE102021116859A1/de?q=(Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)&oq=Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)
+
+Aldi Piroli, Vinzenz Dallabetta, Marc Walessa, Daniel Meissner
+* [DPMA](https://register.dpma.de/DPMAregister/pat/register?AKZ=1020211168597&CURSOR=0)
+
+* [Google Patents](https://patents.google.com/patent/DE102021116859A1/de?q=(Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)&oq=Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)
+
+</div>
+</div>
+
+
+
+<!-- # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+# 📖 Education
+<a id="education"></a>
+- *2020-Present*, Started PhD
+- *2020*, Master in Computer and Automation Engineering (110/110 cum laude).
+- *2017*, Bachelor in Information Engineering.
 
-# 💬 Invited Talks
+<!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
