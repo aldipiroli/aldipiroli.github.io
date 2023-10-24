@@ -16,31 +16,147 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
+# 👨🏻‍💻 About Me
+I am a PhD student at the <a href="https://www.uni-ulm.de/in/mrm/">Ulm University</a> (Germany), supervised by Prof. Klaus Dietmayer and in collaboration with BMW AG.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+I do research on 3D deep learning perception for autonomous driving applications, with a focus on robustness to adverse weather conditions. 
+I did my undergraduate studies at the <a href="https://www.diism.unisi.it/it">University of Siena</a> (Italy), where I obtained a Master's degree in Robotics and Automation Engineering.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+In my spare time I enjoy travelling, running and reading a good book.
 
-
+<!-- 
 # 🔥 News
 - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  
+- -->
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/sunet_2023.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[**Towards Robust 3D Object Detection In Rainy Conditions**](https://arxiv.org/abs/2310.00944)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Aldi Piroli**, Vinzenz Dallabetta, Johannes Kopp, Marc Walessa, Daniel Meissner, Klaus Dietmayer
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+IEEE International Conference on Intelligent Transportation Systems (ITSC) 2023
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/ghostnet_2023.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**LS-VOS: Identifying Outliers in 3D Object Detections Using Latent Space Virtual Outlier Synthesis**](https://arxiv.org/abs/2310.00952)
+
+**Aldi Piroli**, Vinzenz Dallabetta, Johannes Kopp, Marc Walessa, Daniel Meissner, Klaus Dietmayer
+
+IEEE International Conference on Intelligent Transportation Systems (ITSC) 2023
+</div>
+</div>
+
+
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_semantic_spray_dataset_gif1.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**SemanticSpray Dataset**](https://semantic-spray-dataset.github.io/)
+
+**Aldi Piroli**, Vinzenz Dallabetta, Johannes Kopp, Marc Walessa, Daniel Meissner, Klaus Dietmayer
+
+
+<a href="https://semantic-spray-dataset.github.io/" style="text-decoration: none"><img src="images/icons/icons8-homepage-100.svg" alt="Home Icon" class="icon"><span>&ensp;Project Page</span></a>
+<br>
+<a href="https://www.youtube.com/watch?v=P_dM0mG9wX8&list=PLajmQbgGUOt2T-JjM6sUUDDeaxqmMZro3" style="text-decoration: none"><img src="images/icons/video-play-button-svgrepo-com.svg" class="icon"><span>&ensp;Video</span></a>
+<br>
+<a href="https://github.com/aldipiroli/semantic_spray_dataset" style="text-decoration: none"><img src="images/icons/icons8-github.svg" alt="Home Icon" class="icon"><span>&ensp;Code</span></a>
+</div>
+</div>
+
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_ral2023.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Energy-based Detection of Adverse Weather Effects in LiDAR Data**](https://arxiv.org/abs/2305.16129)
+
+**Aldi Piroli**, Vinzenz Dallabetta, Johannes Kopp, Marc Walessa, Daniel Meissner, Klaus Dietmayer
+
+IEEE Robotics and Automation Letters (RA-L) 2023
+
+<a href="projects/energy-based-adverse-weather-detection-lidar/index.html" style="text-decoration: none"><img src="images/icons/icons8-homepage-100.svg" alt="Home Icon" class="icon"><span>&ensp;Project Page</span></a>
+<br>
+<a href="https://www.youtube.com/watch?v=pCS3zABdaAU" style="text-decoration: none"><img src="images/icons/video-play-button-svgrepo-com.svg" class="icon"><span>&ensp;Video</span></a>
+</div>
+</div>
+
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_icra2023.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Tackling Clutter in Radar Data -- Label Generation and Detection Using PointNet++**](https://arxiv.org/abs/2303.09530)
+
+Johannes Kopp, Dominik Kellner, **Aldi Piroli**, Klaus Dietmayer
+
+IEEE International Conference on Robotics and Automation (ICRA) 2023
+</div>
+</div>
+
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_itsc2022.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Detection of Condensed Vehicle Gas Exhaust in LiDAR Point Clouds**](https://arxiv.org/abs/2207.04908)
+
+**Aldi Piroli**, Vinzenz Dallabetta, Marc Walessa, Daniel Meissner, Johannes Kopp, Klaus Dietmayer
+
+IEEE International Conference on Intelligent Transportation Systems (ITSC) 2022
+</div>
+</div>
+
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_iv2022.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Robust 3D Object Detection in Cold Weather Conditions**](https://arxiv.org/abs/2205.11925)
+
+**Aldi Piroli**, Vinzenz Dallabetta, Marc Walessa, Daniel Meissner, Johannes Kopp, Klaus Dietmayer
+
+IEEE Intelligent Vehicles Symposium (IV) 2022
+</div>
+</div>
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_itsc2021.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Fast Rule-Based Clutter Detection in Automotive Radar Data**](https://arxiv.org/abs/2108.12224)
+
+Johannes Kopp, Dominik Kellner, **Aldi Piroli**, Klaus Dietmayer
+
+IEEE International Conference on Intelligent Transportation Systems (ITSC) 2021
+</div>
+</div>
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_mfi2020.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**LMB Filter Based Tracking Allowing for Multiple Hypotheses in Object Reference Point Association**](https://arxiv.org/abs/2011.05657)
+
+Martin Herrmann, **Aldi Piroli**, Jan Strohbeck, Johannes Müller, Michael Buchholz
+
+IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI) 2020
+</div>
+</div>
+
 
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
