@@ -36,6 +36,8 @@ In my spare time I enjoy travelling, running and reading a good book.
 **Aldi Piroli**, Vinzenz Dallabetta, Johannes Kopp, Marc Walessa, Daniel Meissner, Klaus Dietmayer
 
 IEEE International Conference on Intelligent Transportation Systems (ITSC) 2023
+
+<a href="projects/towards-robust-object-detection-in-rainy-conditions/index.html" style="text-decoration: none"><img src="images/icons/icons8-homepage-100.svg" alt="Home Icon" class="icon"><span>&ensp;Project Page</span></a>
 </div>
 </div>
 
