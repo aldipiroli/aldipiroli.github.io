@@ -37,7 +37,10 @@ In my spare time I enjoy travelling, running and reading a good book.
 
 IEEE International Conference on Intelligent Transportation Systems (ITSC) 2023
 
+
 <a href="projects/towards-robust-object-detection-in-rainy-conditions/index.html" style="text-decoration: none"><img src="images/icons/icons8-homepage-100.svg" alt="Home Icon" class="icon"><span>&ensp;Project Page</span></a>
+<br>
+<a href="https://www.youtube.com/watch?v=aILIRO3QlXs" style="text-decoration: none"><img src="images/icons/video-play-button-svgrepo-com.svg" class="icon"><span>&ensp;Video</span></a>
 </div>
 </div>
 
