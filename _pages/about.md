@@ -16,8 +16,9 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-# 👨🏻‍💻 About Me
-I am a PhD student at the <a href="https://www.uni-ulm.de/in/mrm/">Ulm University</a> (Germany), supervised by Prof. Klaus Dietmayer and in collaboration with BMW AG.
+<!-- # 👨🏻‍💻 About Me -->
+# About Me
+I am a PhD student at  <b><a href="https://www.uni-ulm.de/in/mrm/">Ulm University</a></b> (Germany), supervised by Prof. Klaus Dietmayer and in collaboration with <b>BMW AG</b>.
 
 I do research on 3D deep learning perception for autonomous driving applications, with a focus on robustness to adverse weather conditions. 
 I did my undergraduate studies at the <a href="https://www.diism.unisi.it/it">University of Siena</a> (Italy), where I obtained a Master's degree in Robotics and Automation Engineering.
@@ -25,7 +26,8 @@ I did my undergraduate studies at the <a href="https://www.diism.unisi.it/it">Un
 In my spare time I enjoy travelling, running and reading a good book.
 
 
-# 📝 Publications 
+<!-- # 📝 Publications  -->
+# Publications 
 <a id="publications"></a>
 <!--  -->
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/sunet_2023.png' alt="sym" width="100%"></div></div>
@@ -161,38 +163,51 @@ IEEE International Conference on Multisensor Fusion and Integration for Intellig
 
 
 
-# ⚙️ Patents
+<!-- # ⚙️ Patents -->
+# Patents
 <a id="patents"></a>
 
-<!--  -->
+
+<!-- Patent  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/patent_robust_3d_cold.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Verfahren zum Erzeugen von Trainingsdaten für ein lidarbasiertes Erkennen von Fremdfahrzeugen und zum Trainieren eines Detektionsmodells sowie Kraftfahrzeug**](https://register.dpma.de/DPMAregister/pat/register?AKZ=1020221116255&CURSOR=1)
+
+<b>Aldi Piroli</b>, Vinzenz Dallabetta, Marc Walessa, Daniel Meissner
+* [DPMA](https://register.dpma.de/DPMAregister/pat/register?AKZ=1020221116255&CURSOR=1)
+</div>
+</div>
+<!-- end Patent  -->
+
+
+<!-- Patent -->
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/patent_gas_detection.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [**Verfahren und Erkennungseinrichtung zum lidarbasierten Erkennen von Abgaswolken und Kraftfahrzeug**](https://patents.google.com/patent/DE102021116859A1/de?q=(Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)&oq=Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)
 
-Aldi Piroli, Vinzenz Dallabetta, Marc Walessa, Daniel Meissner
+<b>Aldi Piroli</b>, Vinzenz Dallabetta, Marc Walessa, Daniel Meissner
 * [DPMA](https://register.dpma.de/DPMAregister/pat/register?AKZ=1020211168597&CURSOR=0)
 
 * [Google Patents](https://patents.google.com/patent/DE102021116859A1/de?q=(Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)&oq=Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)
-
 </div>
 </div>
-
-
+<!-- end Patent  -->
 
 <!-- # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
-# 📖 Education
+<!-- # 📖 Education -->
+# Education
 <a id="education"></a>
-- *2020-Present*, Started PhD
-- *2020*, Master in Computer and Automation Engineering (110/110 cum laude).
-- *2017*, Bachelor in Information Engineering.
+- <b>2020-Present</b>: PhD in 3D Deep Learning for Autonomus Driving
+- <b>2020</b>: Master in Computer and Automation Engineering (110/110 cum laude)
+- <b>2017</b>: Bachelor in Information Engineering
 
-<!-- # 💬 Invited Talks
+<!-- <!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
+# 💻 Internships -->
