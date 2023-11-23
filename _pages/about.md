@@ -172,10 +172,11 @@ IEEE International Conference on Multisensor Fusion and Integration for Intellig
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/patent_robust_3d_cold.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[**Verfahren zum Erzeugen von Trainingsdaten für ein lidarbasiertes Erkennen von Fremdfahrzeugen und zum Trainieren eines Detektionsmodells sowie Kraftfahrzeug**](https://register.dpma.de/DPMAregister/pat/register?AKZ=1020221116255&CURSOR=1)
+[**Verfahren zum Erzeugen von Trainingsdaten für ein lidarbasiertes Erkennen von Fremdfahrzeugen und zum Trainieren eines Detektionsmodells sowie Kraftfahrzeug**](https://patents.google.com/patent/DE102022111625A1/en)
 
 <b>Aldi Piroli</b>, Vinzenz Dallabetta, Marc Walessa, Daniel Meissner
 * [DPMA](https://register.dpma.de/DPMAregister/pat/register?AKZ=1020221116255&CURSOR=1)
+* [Google Patents](https://patents.google.com/patent/DE102022111625A1/en)
 </div>
 </div>
 <!-- end Patent  -->
@@ -185,12 +186,12 @@ IEEE International Conference on Multisensor Fusion and Integration for Intellig
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/patent_gas_detection.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[**Verfahren und Erkennungseinrichtung zum lidarbasierten Erkennen von Abgaswolken und Kraftfahrzeug**](https://patents.google.com/patent/DE102021116859A1/de?q=(Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)&oq=Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)
+[**Verfahren und Erkennungseinrichtung zum lidarbasierten Erkennen von Abgaswolken und Kraftfahrzeug**](https://patents.google.com/patent/DE102021116859A1/en)
 
 <b>Aldi Piroli</b>, Vinzenz Dallabetta, Marc Walessa, Daniel Meissner
 * [DPMA](https://register.dpma.de/DPMAregister/pat/register?AKZ=1020211168597&CURSOR=0)
 
-* [Google Patents](https://patents.google.com/patent/DE102021116859A1/de?q=(Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)&oq=Verfahren+und+Erkennungseinrichtung+zum+lidarbasierten+Erkennen+von+Abgaswolken+und+Kraftfahrzeug)
+* [Google Patents](https://patents.google.com/patent/DE102021116859A1/en)
 </div>
 </div>
 <!-- end Patent  -->
