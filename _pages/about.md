@@ -203,7 +203,7 @@ IEEE International Conference on Multisensor Fusion and Integration for Intellig
 <!-- # 📖 Education -->
 # Education
 <a id="education"></a>
-- <b>2020-Present</b>: PhD Student in 3D Deep Learning for Autonomus Driving
+- <b>2020-Present</b>: PhD Student in 3D Deep Learning for Autonomous Driving
 - <b>2020</b>: Master in Computer and Automation Engineering (110/110 cum laude)
 - <b>2017</b>: Bachelor in Information Engineering
 
