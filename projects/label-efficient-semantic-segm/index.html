@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="utf-8">
+  <meta name="description" content="Label-Efficient Semantic Segmentation of LiDAR Point Clouds in
+  Adverse Weather Conditions">
+  <meta name="keywords" content="LiDAR, adverse weather, ood, out of distribution detection, spray, fog, snow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Label-Efficient Semantic Segmentation of LiDAR Point Clouds in
+    Adverse Weather Conditions</title>
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6YMPSY7WYP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6YMPSY7WYP');
+  </script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Label-Efficient Semantic Segmentation of LiDAR Point Clouds in
+              Adverse Weather Conditions
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://aldipiroli.github.io/">Aldi Piroli</a><sup>1</sup>,</span>
+              <span class="author-block">
+                &nbsp;<a href="">Vinzenz Dallabetta</a><sup>2</sup>,</span>
+              <span class="author-block">
+                &nbsp;<a href="">Johannes Kopp</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                &nbsp;<a href="">Marc Walessa</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                &nbsp;<a href="">Daniel Meissner</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                &nbsp;<a href="">Klaus Dietmayer</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Ulm University &nbsp;</span>
+              <span class="author-block"><sup>2</sup>BMW AG</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://ieeexplore.ieee.org/document/10517394"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2406.09906" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://github.com/aldipiroli/semantic_spray_dataset"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=DVdKOYepDmU"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Video from Paper. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <div class="publication-video">
+              <iframe width="700" height="315" src="https://www.youtube.com/embed/DVdKOYepDmU?si=RKlcGLUD62BtVv2s"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Adverse weather conditions can severely affect the performance of LiDAR sensors by introducing unwanted
+              noise in the measurements.
+              Therefore, differentiating between noise and valid points is crucial for the reliable use of these
+              sensors.
+              Current approaches for detecting adverse weather points require large amounts of labeled data, which can
+              be difficult and expensive to obtain.
+              This paper proposes a label-efficient approach to segment LiDAR point clouds in adverse weather.
+              We develop a framework that uses few-shot semantic segmentation to learn to segment adverse weather points
+              from only a few labeled examples.
+              Then, we use a semi-supervised learning approach to generate pseudo-labels for unlabelled point clouds,
+              significantly increasing the amount of training data without requiring any additional labeling.
+              We also integrate good weather data in our training pipeline, allowing for high performance in both good
+              and adverse weather conditions.
+              Results on real and synthetic datasets show that our method performs well in detecting snow, fog, and
+              spray.
+              Furthermore, we achieve competitive performance against fully supervised methods while using only a
+              fraction of labeled data.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+
+      <!-- Method. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Method</h2>
+          <div class="content has-text-justified">
+            <img src="./static/images/method.jpg" class="interpolation-image" />
+            <p style="text-align: justify; font-size: 14px;">
+              Overview of our method.
+              <br>
+              <b>Stage One</b>: we aim to train a model \(\phi_{S_1}\) that performs well in adverse weather scenes.
+              We use few-shot semantic segmentation (FSS) to learn from the labeled dataset \(\mathcal{D}_t^\ell\)
+              (adverse weather).
+              We iteratively select the best-performing model \(\phi_{S_1}^*\) by validating the performance of
+              \(\phi_{S_1}\) on the pseudo-validation set \(\mathcal{D}_{S_1}^v\).
+              To obtain additional training data without increasing the labeling effort, we generate pseudo-labels for
+              the unlabelled target dataset \(\mathcal{D}_t^u\) using \(\phi_{S_1}^*\) and train with them in a
+              semi-supervised learning (SSL) fashion.
+              <br>
+              <b>Stage Two</b>: we aim to train a new model \(\phi_{S_2}\) that performs well in both good and adverse
+              weather.
+              We use FSS training like in the previous stage.
+              Additionally, we combine pseudo-labels generated from the resulting model \(\phi_{S_1}^*\) of Stage One
+              with labeled data sampled from \(\mathcal{D}_s\) (good weather) using polar data mixing and train with
+              them using a combination of supervised-learning (SL) and SSL.
+              We select the best-performing model \(\phi_{S_2}^*\) by validating \(\phi_{S_2}\) on the pseudo-validation
+              set \(\mathcal{D}_{S_2}^v\).
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /Method. -->
+
+      <!-- Citation -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Citation</h2>
+          <div class="content has-text-justified">
+            <p>
+            <section class="section" id="BibTeX">
+              <div class="container is-max-desktop content">
+                <pre><code>
+@article{10517394,
+  author   = {Piroli, Aldi and Dallabetta, Vinzenz and Kopp, Johannes and Walessa, Marc and Meissner, Daniel and Dietmayer, Klaus},
+  journal  = {IEEE Robotics and Automation Letters},
+  title    = {Label-Efficient Semantic Segmentation of LiDAR Point Clouds in Adverse Weather Conditions},
+  year     = {2024},
+  volume   = {9},
+  number   = {6},
+  pages    = {5575-5582},
+  keywords = {Meteorology;Point cloud compression;Laser radar;Semantic segmentation;Training;Snow;Noise;Computers and information processing;machine vision;object segmentation},
+  doi      = {10.1109/LRA.2024.3396099}
+}                  
+                </code></pre>
+                </p>
+              </div>
+          </div>
+        </div>
+        <!-- /Citation. -->
+      </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://github.com/aldipiroli" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content" style="text-align: justify;">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

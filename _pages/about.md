@@ -29,6 +29,42 @@ In my spare time I enjoy travelling, running and reading a good book.
 <!-- # 📝 Publications  -->
 # Publications 
 <a id="publications"></a>
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/ral2024.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Label-Efficient Semantic Segmentation of LiDAR Point Clouds in Adverse Weather Conditions**](https://arxiv.org/abs/2406.09906)
+
+**Aldi Piroli**, Vinzenz Dallabetta, Johannes Kopp, Marc Walessa, Daniel Meissner, Klaus Dietmayer
+
+IEEE Robotics and Automation Letters (RA-L) 2024
+
+<a href="projects/label-efficient-semantic-segm/index.html" style="text-decoration: none"><img src="images/icons/icons8-homepage-100.svg" alt="Home Icon" class="icon"><span>&ensp;Project Page</span></a>
+<br>
+<a href="https://www.youtube.com/watch?v=DVdKOYepDmU" style="text-decoration: none"><img src="images/icons/video-play-button-svgrepo-com.svg" class="icon"><span>&ensp;Video</span></a>
+</div>
+</div>
+
+
+
+<!--  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/iv2024_teaser.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**SemanticSpray++: A Multimodal Dataset for Autonomous Driving in Wet Surface Conditions**](https://arxiv.org/abs/2406.09945)
+
+**Aldi Piroli**, Vinzenz Dallabetta, Johannes Kopp, Marc Walessa, Daniel Meissner, Klaus Dietmayer
+
+IEEE Intelligent Vehicles Symposium (IV 2024)
+
+
+<a href="https://semantic-spray-dataset.github.io/" style="text-decoration: none"><img src="images/icons/icons8-homepage-100.svg" alt="Home Icon" class="icon"><span>&ensp;Project Page</span></a>
+<br>
+<a href="https://github.com/aldipiroli/semantic_spray_dataset" style="text-decoration: none"><img src="images/icons/icons8-github.svg" alt="Home Icon" class="icon"><span>&ensp;Code</span></a>
+</div>
+</div>
+
 <!--  -->
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/sunet_2023.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -100,7 +136,7 @@ IEEE Robotics and Automation Letters (RA-L) 2023
 
 
 <!--  -->
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_icra2023.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_icra2023.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [**Tackling Clutter in Radar Data -- Label Generation and Detection Using PointNet++**](https://arxiv.org/abs/2303.09530)
@@ -109,7 +145,7 @@ Johannes Kopp, Dominik Kellner, **Aldi Piroli**, Klaus Dietmayer
 
 IEEE International Conference on Robotics and Automation (ICRA) 2023
 </div>
-</div>
+</div> -->
 
 
 <!--  -->
@@ -138,7 +174,7 @@ IEEE Intelligent Vehicles Symposium (IV) 2022
 </div>
 
 <!--  -->
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_itsc2021.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_itsc2021.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [**Fast Rule-Based Clutter Detection in Automotive Radar Data**](https://arxiv.org/abs/2108.12224)
@@ -147,7 +183,7 @@ Johannes Kopp, Dominik Kellner, **Aldi Piroli**, Klaus Dietmayer
 
 IEEE International Conference on Intelligent Transportation Systems (ITSC) 2021
 </div>
-</div>
+</div> -->
 
 <!--  -->
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/pub_mfi2020.png' alt="sym" width="100%"></div></div>
