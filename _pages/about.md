@@ -18,9 +18,10 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 <!-- # 👨🏻‍💻 About Me -->
 # About Me
-I am a PhD student at  <b><a href="https://www.uni-ulm.de/in/mrm/">Ulm University</a></b> (Germany), supervised by Prof. Klaus Dietmayer and in collaboration with <b>BMW AG</b>.
+I am a machine learning engineer at BMW AG working on autonomous driving.
 
-I do research on 3D deep learning perception for autonomous driving applications, with a focus on robustness to adverse weather conditions. 
+Previously, I was a PhD student at <a href="https://www.uni-ulm.de/in/mrm/">Ulm University</a> (Germany), supervised by Prof. Klaus Dietmayer and in collaboration with BMW AG.
+My research concentrated on 3D deep learning perception for autonomous driving applications, with a focus on robustness to adverse weather conditions. 
 I did my undergraduate studies at the <a href="https://www.diism.unisi.it/it">University of Siena</a> (Italy), where I obtained a Master's degree in Robotics and Automation Engineering.
 
 In my spare time I enjoy travelling, running and reading a good book.
@@ -203,6 +204,18 @@ IEEE International Conference on Multisensor Fusion and Integration for Intellig
 # Patents
 <a id="patents"></a>
 
+<!-- Patent  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/patent_003.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Verfahren und Datenverarbeitungseinrichtung zur lidarbasierten Umgebungserkennung und Kraftfahrzeug damit**](https://patents.google.com/patent/DE102023105860A1/en)
+
+<b>Aldi Piroli</b>, Vinzenz Dallabetta, Marc Walessa, Daniel Meissner
+* [DPMA](https://register.dpma.de/DPMAregister/pat/PatSchrifteneinsicht?docId=DE102023105860A1)
+* [Google Patents](https://patents.google.com/patent/DE102023105860A1/en)
+</div>
+</div>
+<!-- end Patent  -->
 
 <!-- Patent  -->
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/patent_robust_3d_cold.png' alt="sym" width="100%"></div></div>
@@ -237,11 +250,12 @@ IEEE International Conference on Multisensor Fusion and Integration for Intellig
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 <!-- # 📖 Education -->
-# Education
-<a id="education"></a>
-- <b>2020-Present</b>: PhD Student in 3D Deep Learning for Autonomous Driving
-- <b>2020</b>: Master in Computer and Automation Engineering (110/110 cum laude)
-- <b>2017</b>: Bachelor in Information Engineering
+# CV
+<a id="CV"></a>
+- <b>2024-09 / Present </b>: Machine Learning Engineer at BMW AG
+- <b>2020-06 / 2024-09</b>: PhD Student in 3D Deep Learning for Autonomous Driving
+- <b>2017-09 / 2020-02</b>: Master in Computer and Automation Engineering (110/110 cum laude)
+- <b>2014-09 / 2017-07</b>: Bachelor in Information Engineering
 
 <!-- <!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 

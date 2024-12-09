@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Aldi Piroli"
-description              : "PhD Student in 3D Deep Learning for Autonomous Driving"
+description              : "Machine Learning Engineer for Autonomous Driving"
 repository               : "aldipiroli.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Aldi Piroli"
   avatar           : "images/profile_pic_cropped.png"
-  bio              : "Ulm University"
-  location         : "Ulm, Germany"
+  bio              : "BMW AG"
+  location         : "Germany"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=EO1B95AAAAAJ"

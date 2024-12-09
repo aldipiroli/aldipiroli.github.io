@@ -9,8 +9,8 @@ main:
   - title: "Patents"
     url: "/#patents"
 
-  - title: "Education"
-    url: "/#education"
+  - title: "CV"
+    url: "/#CV"
 
   # - title: "Invited Talks"
   #   url: "/#-invited-talks"
