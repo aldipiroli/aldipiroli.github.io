@@ -205,6 +205,32 @@ IEEE International Conference on Multisensor Fusion and Integration for Intellig
 <a id="patents"></a>
 
 <!-- Patent  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/patent_5.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Verfahren zum Trainieren eines Objektdetektors und damit ausgestattetes Kraftfahrzeug**](https://patents.google.com/patent/DE102023125640A1/en)
+
+<b>Aldi Piroli</b>, Vinzenz Dallabetta, Marc Walessa, Daniel Meissner
+* [DPMA](https://register.dpma.de/DPMAregister/pat/PatSchrifteneinsicht?docId=DE102023125640A1)
+* [Google Patents](https://patents.google.com/patent/DE102023125640A1/en)
+</div>
+</div>
+<!-- end Patent  -->
+
+<!-- Patent  -->
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/patent_4.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[**Verfahren und Detektionsvorrichtung zur lidarbasierten Objektdetektion bei nasser Fahrbahn und entsprechend eingerichtetes Kraftfahrzeug**](https://patents.google.com/patent/DE102023125490A1/en)
+
+<b>Aldi Piroli</b>, Vinzenz Dallabetta, Marc Walessa, Daniel Meissner
+* [DPMA](https://register.dpma.de/DPMAregister/pat/register?AKZ=1020231254901)
+* [Google Patents](https://patents.google.com/patent/DE102023125490A1/en)
+</div>
+</div>
+<!-- end Patent  -->
+
+<!-- Patent  -->
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/papers/patent_003.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
