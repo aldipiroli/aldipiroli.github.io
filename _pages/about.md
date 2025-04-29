@@ -24,7 +24,7 @@ Previously, I was a PhD student at <a href="https://www.uni-ulm.de/in/mrm/">Ulm 
 My research concentrated on 3D deep learning perception for autonomous driving applications, with a focus on robustness to adverse weather conditions. 
 I did my undergraduate studies at the <a href="https://www.diism.unisi.it/it">University of Siena</a> (Italy), where I obtained a Master's degree in Robotics and Automation Engineering.
 
-In my spare time I enjoy travelling, running and reading a good book.
+In my spare time I enjoy travelling, running, bouldering, and reading a good book.
 
 
 <!-- # 📝 Publications  -->
