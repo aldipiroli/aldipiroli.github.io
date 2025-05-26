@@ -275,7 +275,70 @@ IEEE International Conference on Multisensor Fusion and Integration for Intellig
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
-<!-- # 📖 Education -->
+
+# Projects 
+<a id="projects"></a>
+<i>A collection of for fun projects mostly on deep learning stuff.</i>
+
+<!-- ViT_from_scratch -->
+<div class='paper-box-text' markdown="1">
+[**ViT_from_scratch**](https://github.com/aldipiroli/ViT_from_scratch) | <img src="images/icons/icons8-github.svg" class="icon"><span>&ensp;<a href="https://github.com/aldipiroli/ViT_from_scratch">Code</a></span>
+<br>
+* Implementating Vision Transformers (ViT) from scatch, and deploying the model in C++.
+<br>
+</div>
+
+
+<!-- mnist_cpp -->
+<div class='paper-box-text' markdown="1">
+[**mnist_cpp**](https://github.com/aldipiroli/mnist_cpp) | <img src="images/icons/icons8-github.svg" class="icon"><span>&ensp;<a href="https://github.com/aldipiroli/mnist_cpp">Code</a></span>
+<br>
+* Training a network on the mnist_dataset in tensorflow to perform classification and digit detection and then deploying it in C++. 
+<br>
+</div>
+
+
+<!-- pointnet_from_scratch  -->
+<div class='paper-box-text' markdown="1">
+[**pointnet_from_scratch**](https://github.com/aldipiroli/pointnet_from_scratch) | <img src="images/icons/icons8-github.svg" class="icon"><span>&ensp;<a href="https://github.com/aldipiroli/pointnet_from_scratch">Code</a></span>
+<br>
+* Implementing PointNet from scratch using pytorch. 
+<br>
+</div>
+
+<!-- flappy_bird_ai  -->
+<div class='paper-box-text' markdown="1">
+[**flappy_bird_ai**](https://github.com/aldipiroli/flappy_bird_ai) | <img src="images/icons/icons8-github.svg" class="icon"><span>&ensp;<a href="https://github.com/aldipiroli/flappy_bird_ai">Code</a></span>
+<br>
+* Flappy Bird game in Python. A genetic algorithm is used to create a data-set for an agent that is trained to always win the game. 
+<br>
+</div>
+
+<!-- poetry_classifier  -->
+<div class='paper-box-text' markdown="1">
+[**poetry_classifier**](https://github.com/aldipiroli/poetry_classifier) | <img src="images/icons/icons8-github.svg" class="icon"><span>&ensp;<a href="https://github.com/aldipiroli/poetry_classifier">Code</a></span>
+<br>
+*  A model that can distinguish a line of poetry from two poets. 
+<br>
+</div>
+
+<!-- udoo_circuit 
+<div class='paper-box-text' markdown="1">
+[**udoo_circuit**](https://github.com/aldipiroli/udoo_circuit) | <img src="images/icons/icons8-github.svg" class="icon"><span>&ensp;<a href="https://github.com/aldipiroli/udoo_circuit">Code</a></span>
+<br>
+* A device that can collect data from a 2 wheels device such as speed, inclination angle and plotting using Google Maps API. 
+<br>
+</div>
+
+<!-- torcs_gesture_control  -->
+<!-- <div class='paper-box-text' markdown="1">
+[**torcs_gesture_control**](https://github.com/aldipiroli/torcs_gesture_control) | <img src="images/icons/icons8-github.svg" class="icon"><span>&ensp;<a href="https://github.com/aldipiroli/torcs_gesture_control">Code</a></span>
+<br>
+* Using the C++ OpenCV libraries to control with live camera body motion detection the game TORCS. 
+<br>
+</div> --> 
+
+
 # CV
 <a id="CV"></a>
 - <b>2024-09 / Present </b>: Machine Learning Engineer at BMW AG
