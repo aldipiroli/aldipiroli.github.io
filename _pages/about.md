@@ -280,6 +280,14 @@ IEEE International Conference on Multisensor Fusion and Integration for Intellig
 <a id="projects"></a>
 <i>A collection of for fun projects mostly on deep learning stuff.</i>
 
+<!-- mae_from_scratch -->
+<div class='paper-box-text' markdown="1">
+[**mae_from_scratch**](https://github.com/aldipiroli/mae_from_scratch) | <img src="images/icons/icons8-github.svg" class="icon"><span>&ensp;<a href="https://github.com/aldipiroli/mae_from_scratch">Code</a></span>
+<br>
+*  From scratch implementation of the paper: "Masked Autoencoders Are Scalable Vision Learners" CVPR 2022.
+<br>
+</div>
+
 <!-- ViT_from_scratch -->
 <div class='paper-box-text' markdown="1">
 [**ViT_from_scratch**](https://github.com/aldipiroli/ViT_from_scratch) | <img src="images/icons/icons8-github.svg" class="icon"><span>&ensp;<a href="https://github.com/aldipiroli/ViT_from_scratch">Code</a></span>
