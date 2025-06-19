@@ -278,7 +278,7 @@ IEEE International Conference on Multisensor Fusion and Integration for Intellig
 
 # Projects 
 <a id="projects"></a>
-<i>An up to date collection of "for fun" projects mostly on deep learning stuff can be found [here](https://github.com/aldipiroli/aldipiroli#projects) </i>
+An up to date collection of "for fun" projects, mostly on deep learning stuff, can be found [here](https://github.com/aldipiroli/aldipiroli#projects).
 
 # CV
 <a id="CV"></a>
