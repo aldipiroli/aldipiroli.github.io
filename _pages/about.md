@@ -18,9 +18,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 <!-- # 👨🏻‍💻 About Me -->
 # About Me
-I am a machine learning engineer at BMW AG working on autonomous driving.
+I am a machine learning engineer at BMW working on autonomous driving.
 
-Previously, I was a PhD student at <a href="https://www.uni-ulm.de/in/mrm/">Ulm University</a> (Germany), supervised by Prof. Klaus Dietmayer and in collaboration with BMW AG.
+Previously, I was a PhD student at <a href="https://www.uni-ulm.de/in/mrm/">Ulm University</a> (Germany), supervised by Prof. Klaus Dietmayer and in collaboration with BMW.
 My research concentrated on 3D deep learning perception for autonomous driving applications, with a focus on robustness to adverse weather conditions. 
 I did my undergraduate studies at the <a href="https://www.diism.unisi.it/it">University of Siena</a> (Italy), where I obtained a Master's degree in Robotics and Automation Engineering.
 
@@ -282,9 +282,9 @@ An up to date collection of "for fun" projects, mostly on deep learning stuff, c
 
 # CV
 <a id="CV"></a>
-- <b>2024-09 / Present </b>: Machine Learning Engineer at BMW AG
-- <b>2020-06 / 2024-09</b>: PhD Student in 3D Deep Learning for Autonomous Driving
-- <b>2017-09 / 2020-02</b>: Master in Computer and Automation Engineering (110/110 cum laude)
+- <b>2024-09 / Present </b>: Machine Learning Engineer at BMW
+- <b>2020-06 / 2024-09</b>: PhD Student in 3D Deep Learning for Autonomous Driving (Summa Cum Laude)
+- <b>2017-09 / 2020-02</b>: Master in Computer and Automation Engineering (110/110 Cum Laude)
 - <b>2014-09 / 2017-07</b>: Bachelor in Information Engineering
 
 <!-- <!-- # 💬 Invited Talks
