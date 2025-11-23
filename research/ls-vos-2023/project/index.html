@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="LS-VOS: Identifying Outliers in 3D Object Detections Using Latent Space Virtual Outlier Synthesis">
+  <meta name="keywords" content="LiDAR, ood, out of distribution detection">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LS-VOS: Identifying Outliers in 3D Object Detections Using Latent Space Virtual Outlier Synthesis</title>
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5460GEBFBN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5460GEBFBN');
+  </script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">LS-VOS: Identifying Outliers in 3D Object Detections Using Latent
+              Space Virtual Outlier Synthesis
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://aldipiroli.github.io/">Aldi Piroli</a><sup>1</sup>,</span>
+              <span class="author-block">
+                &nbsp;<a href="">Vinzenz Dallabetta</a><sup>2</sup>,</span>
+              <span class="author-block">
+                &nbsp;<a href="">Johannes Kopp</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                &nbsp;<a href="">Marc Walessa</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                &nbsp;<a href="">Daniel Meissner</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                &nbsp;<a href="">Klaus Dietmayer</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Ulm University &nbsp;</span>
+              <span class="author-block"><sup>2</sup>BMW AG</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2310.00952" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2310.00952" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://github.com/aldipiroli/semantic_spray_dataset"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=P_dM0mG9wX8&list=PLajmQbgGUOt2T-JjM6sUUDDeaxqmMZro3"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span> -->
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://semantic-spray-dataset.github.io/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-archive"></i>
+                    </span>
+                    <span>Data</span>
+                  </a> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="section">
+    <div class="container is-max-fullhd">
+
+      <!-- Video from Paper. -->
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <div class="publication-video">
+              <iframe width="700" height="315" src="https://www.youtube.com/embed/pCS3zABdaAU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!--/ Video from Paper. -->
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              LiDAR-based 3D object detectors have achieved unprecedented speed and accuracy in autonomous driving
+              applications.
+              However, similar to other neural networks, they are often biased toward high-confidence predictions or
+              return detections where no real object is present.
+              These types of detections can lead to a less reliable environment perception, severely affecting the
+              functionality and safety of autonomous vehicles.
+            </p>
+            <p>
+              We address this problem by proposing LS-VOS, a framework for identifying outliers in 3D object detections.
+              Our approach builds on the idea of Virtual Outlier Synthesis (VOS), which incorporates outlier knowledge
+              during training, enabling the model to learn more compact decision boundaries.
+              In particular, we propose a new synthesis approach that relies on the latent space of an auto-encoder
+              network to generate outlier features with a parametrizable degree of similarity to in-distribution
+              features.
+              In extensive experiments, we show that our approach improves the outlier detection capabilities of a
+              state-of-the-art object detector while maintaining high 3D object detection performance.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+
+      <!-- Method. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Method</h2>
+          <div class="content has-text-justified">
+            <img src="./static/images/method.png" class="interpolation-image" />
+            <p style="text-align: justify; font-size: 14px;">
+              Overview of the proposed LS-VOS framework.
+              During training, the backbone of a 3D object detector extracts features from the input point cloud. 
+              Based on the IoU with the ground truth bounding boxes, features are divided into in-distribution (ID) and false positives (FP).
+              The ID features, concatenated with the one-hot-encoded predicted class, are saved at each training step in a queue Q.
+              To synthesize virtual outliers, ID features are randomly sampled  from Q and an encoder (E) is used to embed them.
+              Random noise is added to the embedded features which are then reconstructed using a decoder (D).
+              These reconstructed features (virtual outliers) are used together with ID and FP to train the uncertainty head, which returns high scores for OOD objects and low scores for ID objects. 
+              In the detection plot, we use the color green for ground truth boxes and blue for predictions.
+              We use red to highlight the predicted boxes classified as OOD.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /Method. -->
+
+      <!-- Results. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Results</h2>
+          <div class="content has-text-justified">
+            <img src="./static/images/results.png" class="interpolation-image" />
+            <p style="text-align: justify; font-size: 14px;">
+              Qualitative results of PV-RCNN++ trained with the proposed LS-VOS framework.
+              All four scenes are from the Waymo Open Dataset validation set.
+              In green, we report the ground truth bounding boxes, and in blue the predicted bounding boxes.
+              In red, we highlight the detections classified as OOD using the decision rule with threshold \(\tau\) chosen at \(95\%\) true positive rate.
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /Results. -->
+
+      <!-- Citation -->
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Citation</h2>
+          <div class="content has-text-justified">
+            <p>
+            <section class="section" id="BibTeX">
+              <div class="container is-max-desktop content">
+                <pre><code>@ARTICLE{10143263,
+    author={Piroli, Aldi and Dallabetta, Vinzenz and Kopp, Johannes and Walessa, Marc and Meissner, Daniel and Dietmayer, Klaus},
+    journal={IEEE Robotics and Automation Letters},
+    title={Energy-Based Detection of Adverse Weather Effects in LiDAR Data}, 
+    year={2023},
+    volume={8},
+    number={7},
+    pages={4322-4329},
+    doi={10.1109/LRA.2023.3282382}}</code></pre>
+                </p>
+              </div>
+          </div>
+        </div> -->
+        <!-- /Citation. -->
+      </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://github.com/aldipiroli" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content" style="text-align: justify;">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
