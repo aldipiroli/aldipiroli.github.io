@@ -6,10 +6,10 @@
 }
 
 :root {
-    --bg: #ffffff;
-    --text: #000000;
-    --text-muted: #6b6b6b;
-    --link: #2d2d2d;
+    --bg: #F2F2F2;
+    --text: #100F0F;
+    --text-muted: #6F6E69;
+    --link: #205EA6;
     --link-hover: #5E409D;
     --border: #d0d0d0;
     --line-height: 1.4;
@@ -265,7 +265,7 @@ main {
 }
 
 .publication-content h2 a {
-    color: var(--link);
+    color: var(--text);
     text-decoration: none;
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
