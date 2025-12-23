@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>BlazeSeg: Implementing and training a sub-millisecond semantic segmentation model.</title>
+    <link href="../../styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main class="content-page" data-latex="true">
+        <nav class="top-nav" id="top-nav"></nav>
+        <h1>BlazeSeg</h1>
+        <div class="highlight-note subtitle">
+            Implementing and training a simple sub-millisecond semantic segmentation model.
+            <div class="project-badges">
+                <a href="https://github.com/aldipiroli/BlazeSeg">
+                    <img src="https://img.shields.io/badge/GitHub-Project-blue" alt="GitHub Project" />
+                </a>
+            </div>
+        </div>
+        <div class="blog-image">
+
+            <div class="blog-image-wrapper">
+                <img src="img/teaser.webp" alt="BlazeSeg Overview" style="max-height: 350px; width: auto;" />
+            </div>
+            <div class="caption">
+                <span class="caption-label">Figure 1</span>
+                <span class="caption-content">BlazeSeg results for person foreground segmentation. The model can run
+                    inference on \(128\times 128\) images in less than \(1\text{ms} ^{\dagger}\). Video
+                    source\(^{\ddagger}\).</span>
+            </div>
+        </div>
+
+        <div class="content-list">
+            <div class="about-text" style="width: 100%;">
+                <p>I recently read and <a href="https://github.com/aldipiroli/BlazeFace_from_scratch">implemented</a>
+                    the paper <a href="https://arxiv.org/abs/1907.05047">"BlazeFace:
+                        Sub-millisecond Neural Face Detection on Mobile GPUs"</a>. The paper shows how one can perform
+                    sub-millisecond face detection on mobile devices. I checked if there was a semantic segmentation
+                    version using the same "Blaze" philosophy, but I did not find an explicit one (only the <a
+                        href="https://arxiv.org/pdf/1906.08172">MediaPipe</a> paper and <a
+                        href="https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter">website</a>).</p>
+                <p>Having already written a pytorch version of the Blaze backbone, I decided to extend it to perform
+                    semantic segmentation and see how well it performed. I called the model BlazeSeg.</p>
+                <h3>Model Architecture</h3>
+                <p>
+                    The Blaze decoder is based on a simple CNN architecture that processes a \((3 \times 128
+                    \times 128)\)
+                    image. The key idea is the use of group convolutions to learn features over the spatial dimension
+                    and
+                    point-wise convolutions along the channel dimension. Compared to a standard convolution, this is
+                    very <a
+                        href="https://www.paepper.com/blog/posts/depthwise-separable-convolutions-in-pytorch/">efficient</a>
+                    as it has fewer total parameters and operations.
+                </p>
+                <p>
+                    The Blaze decoder downsamples the image by a factor of \(16\). As we are performing semantic
+                    segmentation, we need to upsample the image to the original size as shown in Figure 2.
+                </p>
+                <div class="blog-image">
+                    <div class="blog-image-wrapper">
+                        <img src="img/BlazeSeg_overview.svg" alt="BlazeSeg Overview"
+                            style="max-height: 350px; width: auto;" />
+                    </div>
+                    <div class="caption">
+                        <span class="caption-label">Figure 2</span>
+                        <span class="caption-content">Overview of the BlazeSeg architecture. A full model description is
+                            available
+                            <a
+                                href="https://github.com/aldipiroli/BlazeSeg/blob/main/blazeseg/model/model.py">here</a>.</span>
+                    </div>
+                </div>
+
+                <p>In this setting, the choice of upsampling boils down to essentially a transposed convolution or a
+                    form of
+                    interpolation. Since the goal is to have a very fast model, I decided to first <a
+                        href="https://github.com/aldipiroli/BlazeSeg/blob/main/benchmark.py">benchmark</a> which of
+                    the two operations was faster (Table 1). To my surprise, bilinear upsampling is significantly faster
+                    than
+                    transposed convolution, so I opted for it.</p>
+                <div class="blog-image" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                    <div class="blog-image-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Operation</th>
+                                    <th>CPU (avg)</th>
+                                    <th>CUDA (avg)</th>
+                                    <th>Calls</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>conv_transpose2d</code></td>
+                                    <td>61.219μs</td>
+                                    <td>47.755μs</td>
+                                    <td>4000</td>
+                                </tr>
+                                <tr>
+                                    <td><code>upsample_bilinear2d</code></td>
+                                    <td>17.796μs</td>
+                                    <td>20.012μs</td>
+                                    <td>4000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="caption">
+                        <span class="caption-label">Table 1</span>
+                        <span class="caption-content">Latency comparison between transposed convolution and bilinear
+                            upsampling on CPU and CUDA\(^{\dagger}\).</span>
+                    </div>
+                </div>
+
+                <p>
+                    An <a
+                        href="https://github.com/aldipiroli/BlazeSeg/blob/a1d26c33a42ccb670d60cf6d663126920b3948c3/blazeseg/model/model.py#L93">
+                        upsampling block</a> first bilinearly upsamples the input feature map and then projects the
+                    input channels into the
+                    target output dimension. Afterwards, the possible skip connection is concatenated along the channel
+                    dimension and a group and point convolution are applied. The model in total has \(0.160681\text{M}\)
+                    parameters.
+                </p>
+                <h3>Model Training</h3>
+                <p>
+                    I decided to train the model to perform person segmentation. After a brief look online for datasets
+                    I decided to use this <a
+                        href="https://www.kaggle.com/datasets/nikhilroxtomar/person-segmentation">Kaggle dataset</a> as
+                    it has about \(5\text{k}\) images with segmentation masks.</p>
+                <p>I trained the model using the <a
+                        href="https://github.com/aldipiroli/BlazeSeg/blob/a1d26c33a42ccb670d60cf6d663126920b3948c3/blazeseg/model/loss.py#L18">Binary
+                        Cross Entropy loss</a>. As the number of background pixels usually outnumbers the foreground
+                    ones, I also used a simple positive <a
+                        href="https://docs.pytorch.org/docs/stable/generated/torch.nn.BCELoss.html#:~:text=weight,-%28Tensor">weighting
+                        factor</a>: \(w_\text{pos} = \frac{\text{# background}}{\text{# foreground}}\).</p>
+                <p>I trained for \(100\) epochs with a constant learning rate of \(0.001\) and a batch size of \(8\). I
+                    obtained similar results when using a cosine annealing scheduler. Admittedly, this was not a very
+                    extensive parameter search, and better performance could probably be reached with more effort.
+                </p>
+                <p>As checkpoint selection metrics I used both the train and validation losses and the <a
+                        href="https://lightning.ai/docs/torchmetrics/stable/segmentation/mean_iou.html">Binary IoU</a>
+                    on the validation set (Figure 3 shows an overview). The selected checkpoint reached
+                    \(\approx0.7124~\text{mIoU}\).</p>
+
+                <div class="blog-image">
+                    <div class="blog-image-wrapper">
+                        <img src="img/train_loss.svg" style="max-height: 350px; width: auto;" />
+                    </div>
+                    <div class="blog-image-wrapper">
+                        <img src="img/validation_loss.svg" style="max-height: 350px; width: auto;" />
+                    </div>
+                    <div class="blog-image-wrapper">
+                        <img src="img/validation_mIoU.svg" style="max-height: 350px; width: auto;" />
+                    </div>
+                    <div class="caption">
+                        <span class="caption-label">Figure 3</span>
+                        <span class="caption-content">Metrics derived from training and validation.</span>
+                    </div>
+                </div>
+
+                <h3>Model Analysis and Deployment</h3>
+                <p>Let's first see how this architecture scales with the number of output classes. As this only affects
+                    the last convolutional layer, the impact on the model inference time and size is relatively small
+                    (shown in
+                    Figure 4).</p>
+                <div class="blog-image">
+                    <div class="blog-image-wrapper">
+                        <img src="img/benchmark_runtime_memory_vs_classes.svg"
+                            style="max-height: 350px; width: auto;" />
+                    </div>
+                    <div class="caption">
+                        <span class="caption-label">Figure 4</span>
+                        <span class="caption-content">Impact of the number of output classes on the model inference
+                            runtime
+                            and GPU model size\(^{\dagger}\).</span>
+                    </div>
+                </div>
+
+                <p>
+                    As can be seen in Figure 4, the model inference time, even with a single output class, is
+                    well above the \(1\text{ms}\) threshold. To get below the threshold, I decided to export the model
+                    using <a href="https://github.com/pytorch/TensorRT">torch-TensorRT</a> in order to efficiently run
+                    the model on my NVIDIA GPU.
+                </p>
+                <div class="blog-image" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                    <div class="blog-image-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Backend</th>
+                                    <th>Runtime (mean)</th>
+                                    <th>Runtime (std)</th>
+                                    <th>CUDA Memory (mean)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>PyTorch (CPU)</code></td>
+                                    <td>10.2325 ms</td>
+                                    <td>0.8751 ms</td>
+                                    <td>–</td>
+                                </tr>
+                                <tr>
+                                    <td><code>PyTorch (CUDA)</code></td>
+                                    <td>1.8946 ms</td>
+                                    <td>0.0919 ms</td>
+                                    <td>0.82 MB</td>
+                                </tr>
+                                <tr>
+                                    <td><code>TensorRT FP32</code></td>
+                                    <td>0.6627 ms</td>
+                                    <td>0.0822 ms</td>
+                                    <td>0.19 MB</td>
+                                </tr>
+                                <tr>
+                                    <td><code>TensorRT FP16</code></td>
+                                    <td>0.6291 ms</td>
+                                    <td>0.0828 ms</td>
+                                    <td>0.19 MB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="caption">
+                        <span class="caption-label">Table 2</span>
+                        <span class="caption-content">
+                            Runtime and CUDA memory comparison between pure PyTorch and TensorRT
+                            inference backends. The PyTorch models use FP32. The TensorRT models run on
+                            CUDA\(^{\dagger}\).
+                        </span>
+                    </div>
+                </div>
+                <p>
+                    As shown in Table 2, TensorRT reduces runtime by \(\approx66.7\%\) and model size by
+                    \(\approx76.8\%\). Given how easy it is to <a
+                        href="https://github.com/aldipiroli/BlazeSeg/blob/main/export_model.py">export a model</a> the
+                    switch to TensorRT seems like a good deal.
+                </p>
+                <h3>Misc</h3>
+                <p>
+                    While
+                    \(128\times128\) images are not particularly high resolution, running the model on higher-resolution
+                    inputs would inevitably increase the runtime. A possible compromise could be running the model
+                    inference on the small resolution and then upsample the output mask to the desired one (see
+                    example in Figure 5).
+                </p>
+                <div class="blog-image">
+                    <div class="blog-image-wrapper">
+                        <img src="img/upscale_example.webp" style="max-height: 350px; width: auto;" />
+                    </div>
+                    <div class="caption">
+                        <span class="caption-label">Figure 5</span>
+                        <span class="caption-content">Qualitative results of running the model on low-resolution images
+                            (top) and upscaling the output mask with additional smoothing (bottom).</span>
+                    </div>
+                </div>
+
+
+                <hr class="footnote-separator">
+                <div class="footnote">
+                    <span class="footnote-symbol">\(\dagger\)</span>
+                    <span class="footnote-content">All GPU measurements were performed using an NVIDIA GTX 1650 4GB
+                        mobile. All CPU measurements were instead performed on an AMD Ryzen 7 4800H.</span>
+                </div>
+                <div class="footnote">
+                    <span class="footnote-symbol">\(\ddagger\)</span>
+                    <span class="footnote-content">Video source is <a
+                            href="https://mixkit.co/free-stock-video/">this</a>.</span>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p class="footer-copyright" id="footer-copyright"></p>
+            <div class="footer-links" id="footer-links"></div>
+        </div>
+    </footer>
+    <script src="../../header.js"></script>
+    <script src="../../footer.js"></script>
+</body>
+
+</html>

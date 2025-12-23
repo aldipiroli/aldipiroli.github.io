@@ -77,35 +77,71 @@ function getActiveItem() {
 // Initialize navigation when DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
     const navContainer = document.getElementById('top-nav');
-    if (!navContainer) return;
+    if (navContainer) {
+        const activeItem = getActiveItem();
 
-    const activeItem = getActiveItem();
+        // Build navigation HTML
+        navContainer.innerHTML = '';
+        navConfig.items.forEach((item, index) => {
+            const a = document.createElement('a');
 
-    // Build navigation HTML
-    navContainer.innerHTML = '';
-    navConfig.items.forEach((item, index) => {
-        const a = document.createElement('a');
+            // Use absolute URL based on the script location for internal links
+            if (item.href.startsWith('http')) {
+                a.href = item.href;
+            } else {
+                a.href = baseUrl + item.href;
+            }
 
-        // Use absolute URL based on the script location for internal links
-        if (item.href.startsWith('http')) {
-            a.href = item.href;
-        } else {
-            a.href = baseUrl + item.href;
-        }
+            a.textContent = item.text;
 
-        a.textContent = item.text;
+            if (item.text === activeItem) {
+                a.classList.add('active');
+            }
 
-        if (item.text === activeItem) {
-            a.classList.add('active');
-        }
+            navContainer.appendChild(a);
 
-        navContainer.appendChild(a);
+            // Add separator (except for last item)
+            if (index < navConfig.items.length - 1) {
+                const separator = document.createTextNode(' / ');
+                navContainer.appendChild(separator);
+            }
+        });
+    }
 
-        // Add separator (except for last item)
-        if (index < navConfig.items.length - 1) {
-            const separator = document.createTextNode(' / ');
-            navContainer.appendChild(separator);
-        }
-    });
+    // --- Dynamic Feature Loading ---
+    const mainElement = document.querySelector('main');
+    if (!mainElement) return;
+
+    // LaTeX Support (MathJax)
+    if (mainElement.hasAttribute('data-latex') || document.body.hasAttribute('data-latex')) {
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+        script.async = true;
+        document.head.appendChild(script);
+    }
+
+    // Code Highlighting (Highlight.js)
+    if (mainElement.hasAttribute('data-code') || document.body.hasAttribute('data-code') || document.querySelector('pre code')) {
+        // Load CSS
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css';
+        document.head.appendChild(link);
+
+        // Load JS
+        const script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js';
+        script.onload = () => {
+            hljs.highlightAll();
+        };
+        document.head.appendChild(script);
+    }
 });
 
